@@ -1,0 +1,37 @@
+<div style="display: flex; justify-content: center;">
+  <div fxFlex="200px" class="slide-left">
+    <div style="width: 100%;" *ngFor="let item of listDataSlideLeft">
+      <div
+        class="new-mu-infor"
+        [ngStyle]="{'background-image': 'url('+ item.backgroundurl +')',
+          'background-repeat': 'no-repeat',
+          'height': item.height
+        }">
+      </div>
+    </div>
+  </div>
+  <div fxFlex="50" class="container">
+    <div style="width: 100%;" *ngFor="let item of listData">
+      <div
+        class="new-mu-infor"
+        [ngStyle]="{'background-image': 'url('+ item.backgroundurl +')',
+          'background-repeat': 'no-repeat',
+          'height': item.height
+        }">
+
+      </div>
+    </div>
+
+  </div>
+  <div fxFlex="200px" class="slide-right">
+    <div style="width: 100%;" *ngFor="let item of listDataSlideLeft">
+      <div
+        class="new-mu-infor"
+        [ngStyle]="{'background-image': 'url('+ item.backgroundurl +')',
+          'background-repeat': 'no-repeat',
+          'height': item.height
+        }">
+      </div>
+    </div>
+  </div>
+</div>
